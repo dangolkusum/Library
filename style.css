@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container{
+    background-color: #fafafa;
+    height: 100vh;
+}
+.heading{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px 20px 40px;
+}
+#add-book{
+    width: 130px;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-align: center;
+    background-color: rgba(123, 205, 238, 0.247);
+    border: none;
+    border-radius: 30px;
+}
+#logo{
+    /* padding: 20px; */
+    font-size: 2em;
+    font-weight: 700;
+    color: #0000009c;
+}
+.card{
+    height: 200px;
+    width: 300px;
+    padding: 10px 10px 20px 20px;
+    background-color: #F5DEB39B;
+    box-shadow: 5px 5px 15px 0 lightgray;
+}
+.card .title{
+    font-size: 1.3em;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.author{
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    margin-right: 20px;
+
+}
+.remove-book{
+    float: right;
+    height: 20px;
+    width: 20px;
+    color: grey;
+    
+}
+.book-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    justify-content: space-around;
+    gap: 30px;
+    margin: 20px 40px 40px 40px;
+}
+
+#dialog-box{
+    border: none;
+    border-radius: 20px;
+    justify-content: start;
+    height: 450px;
+    width: 650px;
+    border: 1px solid black;
+    margin: 30px 100px 0 400px;
+}
+#dialog-box #close{
+    margin: 10px;
+    float: right;
+    height: 30px;
+    width: 60px;
+    font-size: 1em;
+    font-weight: 500;
+    border-radius: 30px;
+    background-color: rgba(248, 103, 103, 0.986);
+    border: none;
+}
+
+form{
+    margin: 40px 20px 20px 20px;
+}
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.add{
+    height: 30px;
+    width: 100px;
+    border-radius: 30px;
+    border: none;
+    background-color: rgba(100, 169, 214);
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
