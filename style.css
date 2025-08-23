@@ -3,19 +3,86 @@
     padding: 0;
     box-sizing: border-box;
     outline: none;
+    list-style: none;
+    text-decoration: none;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .container{
     background-color: #fafafa;
     height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+.sidebar{
+    background-color: gainsboro;
+}
+.sidebar-container{
+    margin-left: 20px;
+    margin-top: 15px;
+    display: grid;
+    gap: 25px;
+    
+}
+.sidebar>.icon {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    flex-shrink: 0;
+
+}
+#dashboard .icon img{
+    height: 50px;
+
+}
+.sidebar svg{
+    height: 20px;
+}
+
+#dashboard a .label{
+    font-size: 2.5em;
+    font-weight: 600;
+    font-family: 'dancing script',cursive;
+    color: black;
+}
+.sidebar a .label {
+    margin-left: 10px;
+}
+.sidebar li{
+    margin-top: 20px;
+    list-style-type: none;
+    font-size: 1em;
+    font-weight: 600;
+}
+.sidebar a{
+    color: black;
+    display: flex;
+    align-items:center ;
+    text-decoration: none;
+}
+#logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
 }
 .heading{
+    margin-top: 10px;
     display: flex;
     justify-content: space-between;
     padding: 20px 40px 20px 40px;
+    gap: 40px;
+}
+.heading input{
+    width: 20%;
+    border-radius: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 1em;
 }
 #add-book{
     width: 130px;
+    height: 35px;
     font-size: 1.1em;
     font-weight: 500;
     text-align: center;
@@ -23,18 +90,25 @@
     border: none;
     border-radius: 30px;
 }
-#logo{
-    /* padding: 20px; */
-    font-size: 2em;
-    font-weight: 700;
-    color: #0000009c;
+.book-cards{
+    display:inline-flex;
+    flex-wrap: wrap;
+    /* grid-template-columns: repeat(auto-fit,minmax(300px,1fr)); */
+    /* justify-content: space-; */
+    gap: 30px;
+    margin: 20px 40px 40px 40px;
 }
+
 .card{
+    position: relative;
+    display: flex;
+    gap: 10px;
     height: 200px;
-    width: 300px;
-    padding: 10px 10px 20px 20px;
-    background-color: #F5DEB39B;
+    width: 350px;
+    padding: 10px 10px 20px 10px;
+    background-color: white;
     box-shadow: 5px 5px 15px 0 lightgray;
+    border-radius: 5px;
 }
 .card .title{
     font-size: 1.3em;
@@ -48,19 +122,19 @@
     font-weight: 400;
 
 }
+.book-cover{
+    height: 180px;
+    width: 130px;
+    box-shadow: 3px 3px 3px 0 gray;
+}
 .remove-book{
-    float: right;
+    position: absolute;
+    right: 4px;
+    top: 4px;
     height: 20px;
     width: 20px;
     color: grey;
     
-}
-.book-cards{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-    justify-content: space-around;
-    gap: 30px;
-    margin: 20px 40px 40px 40px;
 }
 
 #dialog-box{
